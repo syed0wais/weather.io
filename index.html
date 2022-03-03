@@ -1,25 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-    <link rel="stylesheet" href="index.css">
+
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather</title>
+    <title>Document</title>
 </head>
+
 <body>
-    <div id = "container">
-        <div class="search-box">
-            <a class="search-icon" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-            <input type="text" id = "input-search-box" placeholder="Search">
-        </div>
-        <div id="box">
-            <p id="p1">Lucknow</p>
-            <p id="p2">17 degree C</p>
-            <img src='images/sunlight.jpg' id="img1"> <p id = "p3">Sunny</p>
-            <p id="p4">March 2 12 degree C/ 24 degree C</p>
+    <div class="main-body">
+        <div class="center-div">
+            <div class="search">
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="content">
+                <div>
+                    <div class="place">
+                        <h1>Lucknow</h1>
+                    </div>
+                    <div class="temp">
+                        <h1>17°C</h1>
+                    </div>
+                    <div class="weather-detail"><img src="./assets/Images/Vector (3).png" alt="">
+                        <h1>Sunny</h1>
+                    </div>
+                    <div class="date-min-max">
+                        <h1>March 3 12°C/24°C</h1>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    *:focus {
+        outline: none;
+    }
+
+    body {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Po;
+    }
+
+    .main-body {
+        height: 100vh;
+        width: 100%;
+        background: url('./assets/Images/pexels-pixabay-269220\ 1\ \(1\).png');
+        background-repeat: no-repeat;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content {
+        background-color: rgba(255, 255, 255, .7);
+        width: 100%;
+        margin-top: 3rem;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .center-div {
+        width: 30%;
+    }
+
+    .search {
+        width: 100%;
+        /* color:rgba(255, 255, 255, .7);  */
+    }
+
+    .place h1 {
+        font-size: 1.5rem;
+    }
+
+    .search input {
+        width: 100%;
+        border: 0;
+        opacity: 70%;
+        padding: 12px 13px;
+        border-radius: 10px;
+        
+
+
+    }
+
+    .search input::placeholder {
+        /* color: rgba(255, 255, 255, 1); */
+        opacity: 100%;
+    }
+
+    h1 {
+        color: #fff;
+        text-align: center;
+        margin: .8rem 0;
+    }
+
+    .weather-detail {
+
+        display: flex;
+        justify-content: center;
+    }
+
+    .weather-detail img {
+        margin: 20px;
+    }
+
+    .weather-detail h1 {
+        margin: auto 0;
+        font-size: 1.5rem;
+    }
+
+    .search input:focus {
+        border: 0;
+    }
+
+    .date-min-max h1 {
+        font-size: 1.2rem;
+
+    }
+</style>
+
 </html>
