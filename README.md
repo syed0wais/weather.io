@@ -1,2 +1,0 @@
-# StillinBeta
-## A Hacakthon Project
