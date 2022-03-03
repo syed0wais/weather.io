@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background: url(images/background.jpg);
+    background: url(blob/main/images/background.jpg);
 }
 .search-box{
     position: absolute;
