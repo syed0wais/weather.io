@@ -12,26 +12,32 @@
     <div class="main-body">
         <div class="center-div">
             <div class="search">
-                <input type="text" placeholder="Search">
+                <input class="search-query" type="text" placeholder="Search">
             </div>
-            <div class="content">
+            <div class="content hidden">
                 <div>
                     <div class="place">
-                        <h1>Lucknow</h1>
+                        <h1 class="place-heading">Lucknow</h1>
                     </div>
                     <div class="temp">
-                        <h1>17°C</h1>
+                        <h1 class="temp-heading"><span class="temp-number">17</span>°C</h1>
                     </div>
-                    <div class="weather-detail"><img src="./assets/images/Vector (5).png" alt="">
-                        <h1>Sunny</h1>
+                    <div class="weather-detail"><img class="weather-icon image" src="./assets/images/Vector (5).png" alt="">
+                        <h1 class="weather-description">Sunny</h1>
                     </div>
                     <div class="date-min-max">
-                        <h1>March 3  <span class="min-max">12°C/24°C</span> </h1>
+                        <h1><span class="date-text">March 3</span> <span class="min-max"><span
+                                    class="min-temp">12</span>°<C>
+                                    <span class="max-temp">24</span>°C</span> </h1>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.0/axios.min.js"
+        integrity="sha512-bPh3uwgU5qEMipS/VOmRqynnMXGGSRv+72H/N260MQeXZIK4PG48401Bsby9Nq5P5fz7hy5UGNmC/W1Z51h2GQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./main.js"></script>
 </body>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
@@ -53,10 +59,20 @@
         box-sizing: border-box;
         font-family: Po;
     }
-    .min-max{
+    .image{
+        width: 80px;
+        height: 80px;
+    }
+
+    .hidden {
+        opacity: 1;
+    }
+
+    .min-max {
         font-size: 1rem;
         margin-left: .5rem;
     }
+
     .main-body {
         height: 100vh;
         width: 100%;
@@ -95,7 +111,7 @@
         opacity: 70%;
         padding: 12px 13px;
         border-radius: 10px;
-        
+
 
 
     }
