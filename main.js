@@ -9,6 +9,7 @@ const searchQuery = document.querySelector('.search-query');
 const weatherIcon = document.querySelector('.weather-icon');
 const contentBox = document.querySelector('.content');
 const errorMeesage = document.querySelector('.error-message');
+errorMeesage.defaultValue ="Error";
 this.showCurrrentLocaationWeather();
 const errorBox = document.querySelector('.error');
 
@@ -38,7 +39,7 @@ searchQuery.addEventListener('keypress', function (e) {
     console.log(searchQuery.value);
     // api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
     axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${searchQuery.value}&appid=07910dfd9ca40f69d0255d54b48baeeb`).then(res => {
-      errorMeesage.innerHTML = ""
+      
       errorBox.classList.add("hidden");
       contentBox.classList.remove("hidden");
 
