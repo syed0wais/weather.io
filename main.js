@@ -3,8 +3,10 @@ const place = document.querySelector('.place-heading');
 const temp = document.querySelector('.temp-number');
 const weatherDescription = document.querySelector('.weather-description');
 const date = document.querySelector('.date-text');
+
 const minTemp = document.querySelector('.min-temp');
 const maxTemp = document.querySelector('.max-temp');
+
 const searchQuery = document.querySelector('.search-query');
 const weatherIcon = document.querySelector('.weather-icon');
 const contentBox = document.querySelector('.content');
@@ -45,8 +47,8 @@ searchQuery.addEventListener('keypress', function (e) {
 
       weatherDescription.innerHTML = capitalizeFirstLetter(res.data.weather[0].description);
       temp.innerHTML = parseInt(res.data.main.temp - 273);
-      minTemp.innerHTML = parseInt(res.data.main.temp_min - 273);
-      maxTemp.innerHTML = parseInt(res.data.main.temp_max - 273);
+      // minTemp.innerHTML = parseInt(res.data.main.temp_min - 273);
+      // maxTemp.innerHTML = parseInt(res.data.main.temp_max - 273);
       const iconCode = res.data.weather[0].icon;
       weatherIcon.src = `http://openweathermap.org/img/wn/${iconCode}@2x.png`;
       place.innerHTML = res.data.name;
