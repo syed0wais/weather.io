@@ -74,8 +74,8 @@ function showCurrrentLocaationWeather() {
 
       weatherDescription.innerHTML = capitalizeFirstLetter(res.data.weather[0].description);
       temp.innerHTML = parseInt(res.data.main.temp - 273);
-      minTemp.innerHTML = parseInt(res.data.main.temp_min - 273);
-      maxTemp.innerHTML = parseInt(res.data.main.temp_max - 273);
+      // minTemp.innerHTML = parseInt(res.data.main.temp_min - 273);
+      // maxTemp.innerHTML = parseInt(res.data.main.temp_max - 273);
       const iconCode = res.data.weather[0].icon;
       weatherIcon.src = `http://openweathermap.org/img/wn/${iconCode}@2x.png`;
       place.innerHTML = res.data.name;
