@@ -84,7 +84,7 @@ function showCurrrentLocaationWeather() {
     })
   }, error => {
     if (error.code == error.PERMISSION_DENIED)
-      alert("Please enable your location");
+    errorMeesage.innerHTML = `Please make sure your location is enabled`
   }
   );
 };
