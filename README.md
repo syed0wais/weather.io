@@ -1,5 +1,5 @@
 # Weather.io
-## A website that gives you details of the live weather of your location by using your IP address and location.
+## A website that gives you details of the live weather of your location by using your IP address and Location.
 
 ## Screenshots: 
 ![msedge_WnxsRelPjX (Medium)](https://user-images.githubusercontent.com/87197237/156917969-f7a9eea5-60b0-431b-be83-b1fc3656cbeb.png)
